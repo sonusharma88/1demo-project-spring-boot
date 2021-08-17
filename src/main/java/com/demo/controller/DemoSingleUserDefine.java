@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoSingleUserDefine {
 
-    @RequestMapping("/print/{hello}")
-    public String print(@PathVariable String hello){
+    @RequestMapping("/scanner/{hello}")
+    public String scanner(@PathVariable String hello){
           return "WELCOME " + hello;
 
     }
