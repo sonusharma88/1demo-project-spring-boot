@@ -4,22 +4,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name = "EMPLOYEE")
 public class Employee {
-    @Id // primary key is the unique key
-    @GeneratedValue // Automatically increment
 
+    @Id // primary key unique value
+    @GeneratedValue // Automatically increment current 1,2,3,......14,15
+    Long id;
 
     String name;
     int age;
     String dept;
 
-    // Default constructor
-    public Employee(){
+
+    // default constructor
+    public Employee() {
 
     }
-
-    // parameterised constructor
+    // parameterized constructor
 
 
     public Employee(String name, int age, String dept) {
@@ -28,7 +29,7 @@ public class Employee {
         this.dept = dept;
     }
 
-    // getter and setter using
+    // getter and setter
 
 
     public String getName() {
